@@ -3,7 +3,7 @@ import type { AuthRequest, AuthResponse, ErrorResponse } from './apiContracts';
 import type { TaskRequestDto,TaskResponseDto, TaskUpdateDto } from './apiContracts';
 
 
-const API_BASE_URL = 'http://localhost:8080/api/v1';
+const API_BASE_URL = 'https://todo-list-project-eour.onrender.com';
 
 
 // View Elements
