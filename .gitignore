@@ -4,7 +4,6 @@ todo_list_backend/target/
 *.jar
 *.war
 *.iml
-.mvn/
 HELP.md
 
 # Spring Tool Suite
@@ -42,3 +41,8 @@ lerna-debug.log*
 
 # System
 .DS_Store
+
+
+todo_list_backend/.env
+*.env
+*.env/**
