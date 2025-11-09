@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo_list</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="auth-view">
+
+    <div class="auth-switcher">
+      <span id="login-label" class="switcher-label active">Login</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="auth-toggle-checkbox">
+        <span class="slider"></span>
+      </label>
+      <span id="register-label" class="switcher-label">Register</span>
+    </div>
+      <form id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" required/>
+        <input type="password" id="login-password" placeholder="Password" required/>
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="register-form">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" required/>
+        <input type="password" id="register-password" placeholder="Password" required/>
+        <button type="submit">Register</button>
+      </form>
+
+      <div id="auth-error" class="error"></div>
+    </div>
+    <div id="task-view">
+      <h2>My Tasks</h2>
+      <button id="logout-button">Logout</button>
+
+      <form id="create-task-form">
+        <input type="text" id="task-title" placeholder="Task Title" required/>
+        <input type="text" id="task-description" placeholder="Description" required/>
+        <button type="submit">Add Task</button>
+      </form>
+      <div id="task-list-container"></div>
+      <div id="task-error" class="error"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
